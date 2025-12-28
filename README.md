@@ -33,7 +33,7 @@ Este proyecto está encapsulado con Docker para garantizar su ejecución en cual
 
 2. **Configuración del Modelo Pre-entrenado:**
    * Si el archivo `.keras` (pesos del modelo) **NO** aparece en la lista de archivos (debido a limitaciones de tamaño de GitHub), descárgalo desde el enlace de Drive y colócalo en la carpeta raíz de este proyecto.
-   * Nombre esperado del archivo: `modelo_resnet50_final.keras`.
+   * Nombre esperado del archivo: `temp_resnet50_finetuned.keras`.
    ```bash
    https://drive.google.com/drive/folders/1sGTRPdyV3Zd_NfSsiPML_idFO7p0NP1J?usp=sharing
    ```
@@ -60,7 +60,7 @@ Este proyecto está encapsulado con Docker para garantizar su ejecución en cual
 ### Archivos Principales (Solución Final)
 * **`01proyecto_trata_datos.ipynb`**: Script de limpieza inicial del dataset WikiArt, selección de clases y balanceo de datos.
 * **`02data_generators.ipynb`**: Configuración de los generadores de datos, partición estratificada (Train/Val/Test) y configuración de *Data Augmentation*.
-* **`06Proyecto_final_ordenado.ipynb`**: **Script Principal (Final)**. Contiene la implementación limpia y modular (patrón *Factory*) que compara arquitecturas y entrena el modelo ganador (ResNet50V2).
+* **`06Proyecto_final_ordenado.ipynb`**: **SCRIPT PRINCIPAL (FINAL)**. Contiene la implementación limpia y modular (patrón *Factory*) que compara arquitecturas y entrena el modelo ganador (ResNet50V2).
 * **`07Script_inferencia.ipynb`**: Interfaz de uso para cargar el modelo entrenado y predecir el estilo de nuevas imágenes.
 
 ### Archivos de Experimentación e Investigación (Historial)
