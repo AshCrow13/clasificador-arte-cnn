@@ -2,7 +2,7 @@
 
 Este repositorio contiene el código fuente y los recursos para el proyecto semestral de la asignatura **Introducción a Machine Learning y Deep Learning**. El objetivo del software es clasificar automáticamente obras de arte en 6 estilos distintos utilizando Redes Neuronales Convolucionales (CNN) y técnicas de *Transfer Learning*.
 
-## 📋 Descripción del Proyecto
+## Descripción del Proyecto
 
 El sistema utiliza la arquitectura **ResNet50V2** pre-entrenada en ImageNet para extraer características visuales complejas y clasificar imágenes en los siguientes movimientos artísticos:
 * Cubismo
@@ -16,7 +16,7 @@ El proyecto implementa un flujo completo de Deep Learning, incluyendo preprocesa
 
 ---
 
-## 🚀 Instalación y Ejecución (Método Docker)
+## Instalación y Ejecución (Método Docker)
 
 Este proyecto está encapsulado con Docker para garantizar su ejecución en cualquier entorno sin problemas de dependencias, cumpliendo con los estándares de reproducibilidad.
 
@@ -61,14 +61,21 @@ Este proyecto está encapsulado con Docker para garantizar su ejecución en cual
 
 ## Estructura del Repositorio
 
+### Archivos Principales (Solución Final)
 * **`01proyecto_trata_datos.ipynb`**: Script de limpieza inicial del dataset WikiArt, selección de clases y balanceo de datos.
 * **`02data_generators.ipynb`**: Configuración de los generadores de datos, partición estratificada (Train/Val/Test) y configuración de *Data Augmentation*.
-* **
-* **`06Proyecto_final_ordenado.ipynb`**: **Script Principal de Entrenamiento**. Contiene la implementación del patrón *Factory* para la comparación de arquitecturas (VGG16, ResNet50V2) y el entrenamiento del modelo final seleccionado.
-* **`07Script_inferencia.ipynb`**: Interfaz de inferencia para cargar el modelo entrenado y predecir el estilo de nuevas imágenes externas.
-* **`imagenes_prueba/`**: Carpeta que contiene imágenes de ejemplo para validar el funcionamiento del modelo rápidamente.
-* **`Dockerfile`**: Archivo de configuración para la creación del contenedor Docker (entorno virtualizado).
-* **`requirements.txt`**: Lista de dependencias y librerías de Python necesarias (TensorFlow, Pandas, etc.).
+* **`06Proyecto_final_ordenado.ipynb`**: **Script Principal (Final)**. Contiene la implementación limpia y modular (patrón *Factory*) que compara arquitecturas y entrena el modelo ganador (ResNet50V2).
+* **`07Script_inferencia.ipynb`**: Interfaz de uso para cargar el modelo entrenado y predecir el estilo de nuevas imágenes.
+
+### Archivos de Experimentación e Investigación (Historial)
+* **`03entrenamiento_modelo.ipynb`**: **Línea Base (Baseline)**. Implementación de una CNN personalizada (Custom CNN) entrenada desde cero. Sirvió para demostrar la dificultad de entrenar sin *Transfer Learning*.
+* **`04Proyecto_Completo_Final.ipynb`**: **Iteración 1 (VGG19)**. Primera implementación exitosa utilizando *Transfer Learning* con la arquitectura VGG19.
+* **`05Proyecto_final_inves.ipynb`**: **Iteración 2 (ResNet50)**. Fase de investigación profunda con ResNet50. Los resultados superiores obtenidos aquí motivaron la refactorización del código hacia la versión final (`06`).
+
+### Otros Archivos
+* **`imagenes_prueba/`**: Imágenes de ejemplo para validación.
+* **`Dockerfile`**: Configuración para la creación del contenedor.
+* **`requirements.txt`**: Dependencias del proyecto.
 
 ---
 
