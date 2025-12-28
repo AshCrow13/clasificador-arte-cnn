@@ -9,7 +9,7 @@ El sistema utiliza la arquitectura **ResNet50V2** pre-entrenada en ImageNet para
 * Expresionismo
 * Impresionismo
 * Realismo
-* Romanticismo
+* Pop_art
 * Ukiyo-e
 
 El proyecto implementa un flujo completo de Deep Learning, incluyendo preprocesamiento, *data augmentation*, entrenamiento con validación cruzada e inferencia.
