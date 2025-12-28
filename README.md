@@ -14,8 +14,6 @@ El sistema utiliza la arquitectura **ResNet50V2** pre-entrenada en ImageNet para
 
 El proyecto implementa un flujo completo de Deep Learning, incluyendo preprocesamiento, *data augmentation*, entrenamiento con validación cruzada e inferencia.
 
----
-
 ## Instalación y Ejecución (Método Docker)
 
 Este proyecto está encapsulado con Docker para garantizar su ejecución en cualquier entorno sin problemas de dependencias, cumpliendo con los estándares de reproducibilidad.
@@ -57,8 +55,6 @@ Este proyecto está encapsulado con Docker para garantizar su ejecución en cual
    
    Copia y pega ese enlace en tu navegador web. Se abrirá Jupyter Lab con todos los archivos del proyecto listos para usar.
 
----
-
 ## Estructura del Repositorio
 
 ### Archivos Principales (Solución Final)
@@ -77,8 +73,6 @@ Este proyecto está encapsulado con Docker para garantizar su ejecución en cual
 * **`Dockerfile`**: Configuración para la creación del contenedor.
 * **`requirements.txt`**: Dependencias del proyecto.
 
----
-
 ## Cómo probar el modelo (Inferencia)
 
 1. Abre el entorno Jupyter a través del enlace generado por Docker.
@@ -90,14 +84,12 @@ Este proyecto está encapsulado con Docker para garantizar su ejecución en cual
    predecir_estilo('./imagenes_prueba/ejemplo_cubismo.jpg')
    ```
 
----
-
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 * **Lenguaje:** Python 3.10
 * **Framework Deep Learning:** TensorFlow / Keras
 * **Arquitectura Base:** ResNet50V2 (Transfer Learning)
 * **Contenerización:** Docker
 
-## ✒️ Autor
+## Autor
 **Omar Ignacio Castro González** Universidad del Bío-Bío  
 Asignatura: Introducción a Machine Learning y Deep Learning
