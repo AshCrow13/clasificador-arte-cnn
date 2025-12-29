@@ -60,13 +60,13 @@ Este proyecto está encapsulado con Docker para garantizar su ejecución en cual
 ### Archivos Principales (Solución Final)
 * **`01proyecto_trata_datos.ipynb`**: Script de limpieza inicial del dataset WikiArt, selección de clases y balanceo de datos.
 * **`02data_generators.ipynb`**: Configuración de los generadores de datos, partición estratificada (Train/Val/Test) y configuración de *Data Augmentation*.
-* **`06Proyecto_final_ordenado.ipynb`**: **SCRIPT PRINCIPAL (FINAL)**. Contiene la implementación limpia y modular (patrón *Factory*) que compara arquitecturas y entrena el modelo ganador (ResNet50V2).
+* **`06Proyecto_Final_Ordenado.ipynb`**: **SCRIPT PRINCIPAL (FINAL)**. Contiene la implementación limpia y modular (patrón *Factory*) que compara arquitecturas y entrena el modelo ganador (ResNet50V2).
 * **`07Script_inferencia.ipynb`**: Interfaz de uso para cargar el modelo entrenado y predecir el estilo de nuevas imágenes.
 
 ### Archivos de Experimentación e Investigación (Historial)
 * **`03entrenamiento_modelo.ipynb`**: **Línea Base (Baseline)**. Implementación de una CNN personalizada (Custom CNN) entrenada desde cero. Sirvió para demostrar la dificultad de entrenar sin *Transfer Learning*.
-* **`04Proyecto_Completo_Final.ipynb`**: **Iteración 1 (VGG19)**. Primera implementación exitosa utilizando *Transfer Learning* con la arquitectura VGG19.
-* **`05Proyecto_final_inves.ipynb`**: **Iteración 2 (ResNet50)**. Fase de investigación profunda con ResNet50. Los resultados superiores obtenidos aquí motivaron la refactorización del código hacia la versión final (`06`).
+* **`04Proyecto_Final.ipynb`**: **Iteración 1 (VGG19)**. Primera implementación exitosa utilizando *Transfer Learning* con la arquitectura VGG19.
+* **`05Proyecto_Final_investigativo.ipynb`**: **Iteración 2 (ResNet50)**. Fase de investigación profunda con ResNet50. Los resultados superiores obtenidos aquí motivaron la refactorización del código hacia la versión final (`06`).
 
 ### Otros Archivos
 * **`imagenes_prueba/`**: Imágenes de ejemplo para validación.
